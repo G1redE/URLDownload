@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Download</title>
+    <link href="./index.css" rel="stylesheet">
+    <script src="./index.js" defer></script>
+</head>
+<body onload="fetchSelect()">
+
+
+<div id="container">
+    <h1>Download from URL</h1>
+    <div id="innerContainer">
+        <label class="label" for="url">URL</label>
+        <input class='input' id="url" name='url' type="text">
+    </div>
+    <div id="innerContainer">
+        <label class="label" for="customerNo">Customer No</label>
+        <select class='input' id="customerNo" name="customerNo">
+            <option value="">Select Customer</option>
+        </select>
+    </div>
+    <div id="innerContainer">
+        <label class="label" for="versionNo">Version No</label>
+        <select class='input' id="versionNo" name="versionNo">
+            <option value="">Select Version</option>
+        </select>
+    </div>
+    <button id="submit" onclick="alertScreen()">Submit</button>
+</div>
+</body>
+</html>
