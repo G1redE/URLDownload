@@ -7,12 +7,17 @@
     <title>URL Download</title>
     <link href="./index.css" rel="stylesheet">
     <script src="./index.js" defer></script>
+    <script lang="javascript" src="js/xlsx.full.min.js"></script>
 </head>
-<body onload="fetchSelect()">
+<body>
 
 
 <div id="container">
     <h1>Download from URL</h1>
+    <div id="innerContainer">
+        <label class="label" for="excel">Upload Excel</label>
+        <input onchange="excelchange(event)" class='input' id="excel" name='excel' type="file" accept=".xls,.xlsx">
+    </div>
     <div id="innerContainer">
         <label class="label" for="url">URL</label>
         <input class='input' id="url" name='url' type="text">
